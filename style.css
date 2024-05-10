@@ -1,1 +1,26 @@
+:root {
+  --ypn-background-grey: rgb(241 241 241);
+  --ypn-background-grey-hover: rgb(225 225 225);
+  --ypn-background-grey-buttons: rgb(230 230 230);
+  --ypn-background-grey-buttons-hover: rgb(222 222 222);
+  --ypn-background-red-buttons: rgb(212 45 47);
+  --ypn-background-red-buttons-hover: rgb(173 0 0);
+  --ypn-grey-ligth-fonts: rgb(118 118 118);
+  --ypn-grey-dark-fonts: rgb(17 17 17);
+  --ypn-font-size-button: 1vhp;
+  --ypn-font-family-title: 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    Helvetica, sans-serif;
+  --ypn-font-size-title: 35px;
+  --ypn-font-weight-title: 500;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  max-width: 100%;
+}

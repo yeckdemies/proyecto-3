@@ -1,0 +1,35 @@
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 10px;
+  height: 45px;
+  border-radius: 60px;
+  flex: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--ypn-font-size-button);
+}
+
+.buttonNormal {
+  background: var(--ypn-background-grey-buttons);
+}
+
+.buttonRegister {
+  background: var(--ypn-background-red-buttons);
+  color: white;
+}
+
+.buttonFlecha {
+  background-color: white;
+}
+
+button:hover {
+  background-color: var(--ypn-background-grey-buttons-hover);
+}
+
+.buttonRegister:hover {
+  background-color: var(--ypn-background-red-buttons-hover);
+}
