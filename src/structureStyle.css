@@ -11,7 +11,16 @@ header {
 h1 {
   text-align: center;
   font-size: 36px;
-  font-family: var(--ypn-font-family-title);
+  font-family: var(--ypn-font-family);
   font-size: var(--ypn-font-size-title);
   font-weight: var(--ypn-font-weight-title);
+}
+
+main {
+  margin: 0 200px 0 200px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
 }

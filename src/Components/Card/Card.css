@@ -1,0 +1,49 @@
+.card {
+  width: 500px;
+  height: 300px;
+  margin: 30px 5px;
+  border-radius: 15px;
+  background-color: var(--ypn-background-grey);
+  overflow: hidden;
+  color: black;
+  position: relative;
+  display: flex;
+}
+
+.card > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card > h3 {
+  text-align: center;
+}
+
+.card > p {
+  text-align: center;
+  margin: 10px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  padding: 150px 20px;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.overlay h2 {
+  color: white;
+  font-family: var(--ypn-font-family);
+  font-size: var(--ypn-font-size-normal);
+  font-weight: var(--ypn-font-weight-normal);
+}
