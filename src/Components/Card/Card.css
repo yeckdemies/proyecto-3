@@ -10,18 +10,19 @@
   display: flex;
 }
 
+.cardSmall {
+  width: 100%;
+  height: 105px;
+  margin: 0;
+}
+
 .card > img {
   object-fit: cover;
   width: 100%;
 }
 
-.card > h3 {
+.cardSmall > h3 {
   text-align: center;
-}
-
-.card > p {
-  text-align: center;
-  margin: 10px;
 }
 
 .overlay {
@@ -36,6 +37,14 @@
   padding: 150px 20px;
 }
 
+.overlaySmall {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .overlay:hover {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -46,4 +55,12 @@
   font-family: var(--ypn-font-family);
   font-size: var(--ypn-font-size-normal);
   font-weight: var(--ypn-font-weight-normal);
+}
+
+.overlaySmall > h2 {
+  padding: 0;
+  text-align: center;
+  font-family: var(--ypn-font-family);
+  font-size: var(--ypn-font-size-small);
+  font-weight: var(--ypn-font-weight-small);
 }

@@ -14,6 +14,8 @@
   --ypn-font-weight-title: 500;
   --ypn-font-size-normal: 25px;
   --ypn-font-weight-normal: 450;
+  --ypn-font-size-small: 20px;
+  --ypn-font-weight-small: 400;
 }
 
 body {

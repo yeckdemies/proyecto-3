@@ -15,16 +15,4 @@ const obtenerDatos = ({ description = 'full', pages, items }) => {
     .catch((error) => error);
 };
 
-/* const obtenerDatos = () => {
-  fetch(
-    'https://api.unsplash.com/photos/?client_id=Mn7gwdvtKqN2T7XIUPi8SQCegXyqTwROFKWFh9ceuTc'
-  )
-    .then((res) => res.json())
-    .then((photos) => {
-      for (const photo of photos) {
-        console.log(photo.urls.regular);
-      }
-    })
-    .catch((e) => console.log('Error: ' + e));
-}; */
 export { obtenerDatos };
