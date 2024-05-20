@@ -64,3 +64,27 @@
   font-size: var(--ypn-font-size-small);
   font-weight: var(--ypn-font-weight-small);
 }
+
+.cardFlotante {
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 150px;
+  cursor: none;
+  margin: 5px;
+}
+
+.cardFlotante > img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+}

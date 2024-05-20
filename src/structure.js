@@ -3,6 +3,8 @@ import { Button } from './Components/Button/Button';
 import { Input } from './Components/Input/Input';
 import { Card } from './Components/Card/Card';
 import { obtenerDatos } from './utils/apiConection';
+import { getElement } from './utils/functions';
+import { CardFind } from './Components/CardFind/CardFind';
 
 const createHeader = (padre) => {
   const logo = document.createElement('img');
@@ -22,7 +24,8 @@ const createHeader = (padre) => {
   });
   Input({
     padre: padre,
-    placeholder: 'Encuentra ideas sobre cenas fáciles, moda, etc.'
+    placeholder: 'Encuentra ideas sobre cenas fáciles, moda, etc.',
+    id: 'busqueda'
   });
   Button({ padre: padre, texto: 'Iniciar Sesión', id: 'sesion' });
   Button({
@@ -37,12 +40,19 @@ const createHeader = (padre) => {
     clase: 'buttonFlecha',
     id: 'flecha'
   });
+
+  let debounceTimeout;
+  busqueda.addEventListener('input', (e) => {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+      CardFind(app, e.target.value);
+    }, 1000);
+  });
 };
 
 const createMain = (padre) => {
   const section1 = document.createElement('section');
   const section2 = document.createElement('section');
-  const section3 = document.createElement('section');
   const gridArticle1Section2 = document.createElement('article');
   const gridArticle2Section2 = document.createElement('article');
 
