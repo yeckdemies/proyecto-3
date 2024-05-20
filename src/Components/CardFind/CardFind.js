@@ -6,21 +6,21 @@ import { Card } from '../Card/Card';
 
 export const CardFind = (nodoPadre, textoBusqueda = 'full') => {
   if (textoBusqueda) {
-    const divExistente = nodoPadre.querySelector('.divResultados');
+    const divExistente = nodoPadre.querySelector('.divBusqueda');
     if (divExistente) {
       divExistente.remove();
     }
-    const divResultados = document.createElement('div');
-    divResultados.className = 'divResultados';
+    const divBusqueda = document.createElement('div');
+    divBusqueda.className = 'divBusqueda';
 
-    divResultados.innerHTML = '';
+    divBusqueda.innerHTML = '';
     obtenerDatos({ description: textoBusqueda, pages: 1, items: 12 })
       .then((fotos) => {
         if (fotos.length > 0) {
           for (const foto of fotos) {
-            Card(divResultados, foto.urls.regular, 'cardFlotante');
+            Card(divBusqueda, foto.urls.regular, 'cardFlotante');
           }
-          nodoPadre.appendChild(divResultados);
+          nodoPadre.appendChild(divBusqueda);
         } else {
           const existeDivSinResultados =
             nodoPadre.querySelector('.divSinResultados');

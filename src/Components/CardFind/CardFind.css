@@ -1,13 +1,4 @@
-.divResultados {
-  position: absolute;
-  display: flex;
-  top: 95px;
-  background-color: white;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.divResultados {
+.divBusqueda {
   position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 0.5fr);
@@ -45,8 +36,48 @@
   margin: 10px;
 }
 
+@media screen and (max-width: 1113px) {
+  .divBusqueda {
+    grid-template-columns: repeat(3, 0.5fr);
+  }
+
+  .divSinResultados {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .divBusqueda {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+  .divSinResultados {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .divBusqueda {
+    top: 170px;
+    margin-left: 100px;
+  }
+
+  .divSinResultados {
+    top: 170px;
+    margin-left: 100px;
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .divBusqueda {
+    grid-template-columns: repeat(1, 0.5fr);
+    margin-left: 100px;
+  }
+
+  .divSinResultados {
+    top: 170px;
+    margin-left: 50px;
+    width: 200px;
+  }
 }

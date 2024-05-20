@@ -23,7 +23,7 @@ input.addEventListener('click', () => {
 
 input.addEventListener('blur', () => {
   const ocultar = document.querySelector('.overlayMain');
-  const divResultados = document.querySelector('.divResultados');
+  const divBusqueda = document.querySelector('.divBusqueda');
   const input = document.querySelector('input');
 
   input.value = '';
@@ -31,7 +31,7 @@ input.addEventListener('blur', () => {
   if (ocultar) {
     main.removeChild(ocultar);
   }
-  if (divResultados) {
-    app.removeChild(divResultados);
+  if (divBusqueda) {
+    app.removeChild(divBusqueda);
   }
 });
