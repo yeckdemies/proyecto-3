@@ -12,7 +12,7 @@ const createHeader = (padre) => {
 
   a.href = '#';
   logo.className = 'logo';
-  logo.src = './public/images/logoPinteres.png';
+  logo.src = './images/logoPinteres.png';
 
   a.appendChild(logo);
   padre.appendChild(a);
